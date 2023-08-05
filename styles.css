@@ -1,0 +1,269 @@
+body{
+    background-color: #FAFAFA;
+    font-family: 'Rubik',sans-serif;
+}
+
+/* styles for header */
+header {
+    background-color: #FAFAFA;;
+    color: #4F5665;
+
+    margin:20px;
+  }
+  nav {
+    position:sticky;
+    display:flex;
+    align-items: center;
+     justify-content:space-between;
+    flex-wrap: wrap;
+
+  }
+  nav .links>ul,nav .search>ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+nav .logo>ul,.home{
+
+    list-style: none;
+    color: #FF5151;
+    font-family: "Rubik";
+    display:flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap:0.5rem;
+    font-size: 22px;
+  }
+
+ 
+  /* Example styles for hero component */
+  .hero {
+    height:70vh;
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%); 
+    color: black;
+    margin: 40px;
+    margin-top:30px;
+  }
+  
+  .hero-text {    
+    display:flex;
+    flex-direction: column;
+   margin:4rem;
+   margin-top: 5rem;
+    mix-blend-mode: multiply;
+    
+  }
+  .hero-text h1{
+    color: #000;
+font-family: 'Aclonica','sans-serif';
+font-size: 114px;
+font-style: normal;
+padding-top: 1rem;
+padding-bottom: 1rem;
+font-weight: 700 !important;
+line-height: normal;
+  }
+  .hero-text p ,.hero-text h1{
+    padding:0;
+    margin:0;
+  }
+  .hero-text>button{
+    margin-top: 4rem;
+    color:#FAFAFA;
+    margin-bottom: 20px;
+    font-size: larger;
+    text-align:center;
+    font-weight: 500;
+    width: 210px;
+height: 60px;
+border-radius: 10px;
+background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+border:none;
+box-shadow: 0px 10px 8px 5px rgba(255, 94, 58, 0.1);  }
+  button:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+  }
+  .hero-image {
+    /* Your image styles go here */
+ mix-blend-mode:multiply;
+   
+}
+.hero-image>img{
+    width:35%;
+height: 100%;
+
+   position:absolute;
+   bottom:0;
+   right: 0;
+
+}
+
+  /*  styles for collection component */
+  .collection {
+    /* Your styles go here */
+height: 100vh;
+margin:6rem;
+border:1px solid blue;
+  }
+  .collection p, .new-arrival p{
+    font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+  }
+  .toggle-buttons button{
+    width: 130px;
+  height: 60px;
+  margin-bottom: 20px;
+    text-align: center;
+    background: #FFF;
+    border:none;
+    border-radius: 10px;
+    color: #4F5665;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .toggle-buttons .special{
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%); 
+    color:white;
+  box-shadow: 0px 10px 8px 5px rgba(255, 94, 58, 0.1);
+  }
+  .toggle-buttons{
+    overflow-x: auto;
+    display:flex;
+    justify-content: center;
+    column-gap: 4rem;
+    margin-bottom:20px;
+
+  }
+  .products{
+    display:flex;
+    justify-content: space-between;
+    margin:4rem;
+    font-family: 'Roboto';
+    column-gap: 2rem;
+    border-radius: 25px;
+    box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.02);
+    border:1px solid yellow;
+  }
+
+   .items{
+    background-image: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%); 
+    width: 380px;
+    border-radius: 25px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+  }
+ .lists{
+  mix-blend-mode: multiply;
+  border:1px solid black;
+}
+  .lists img{
+    width:215px;
+    height:199px;  
+  }
+  /* .items>div{
+    padding:20px;
+    background: linear-gradient(180deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);;
+  } */
+  /* Example styles for new arrival component */
+  .grid {
+    margin:5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap:1rem;
+    column-gap: 0rem;
+    /* Your styles go here */
+  }
+  
+  /* Example styles for categories component */
+  .categories {
+    /* Your styles go here */
+  }
+  
+  /* Example styles for footer */
+  footer {
+    /* Your styles go here */
+  }
+  
+  /* Example styles for responsiveness (media queries) */
+  @media screen and (max-width: 768px) {
+    /* Your responsive styles go here */
+    /* ul{
+        display:flex;
+        flex-direction: column;
+    } */
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:20px;
+    height: 80vh;
+    margin: 5rem;
+  }
+  .card {
+    background-color: #fff;
+    border: 0.5px solid rgba(144, 144, 144, 0.25);
+    border-radius:25px;
+    width: 285px;
+    height: 324px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .image {
+    background-color: #f2f2f2;
+    height: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .details {
+    padding: 10px;
+  }
+  .details h2 {
+    margin-top: 0;
+  }
+  .details p {
+    margin: 0;
+    color: #000;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+  }
+  .rating{
+    margin-top:1.5rem;
+    display:flex;
+    justify-content: space-between;
+    color: #909090;
+font-family:' Roboto';
+font-size: 18px;
+
+font-weight: 700;
+
+  }
